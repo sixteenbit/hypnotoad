@@ -14,78 +14,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 	<style>
-		body {
-			margin: 0;
-			padding: 15px;
-			position: relative;
-			height: 100vh;
-			animation: colorchange 2.5s linear 1s infinite; /* animation-name followed by duration in seconds*/
-			/* you could also use milliseconds (ms) or something like 2.5s */
-			-webkit-animation: colorchange 2.5s linear 0s infinite alternate; /* Chrome and Safari */
-		}
-
-		.content {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		.content h1 {
-			font-size: 48px;
-			font-family: 'Anton', sans-serif;;
-			text-align: center;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		.hypnotoad {
-			display: block;
-			margin: 0 auto;
-			width: 480px;
-			max-width: 100%;
-			height: auto;
-			border: 0;
-		}
-
-		@keyframes colorchange {
-			0% {
-				background: red;
-				color: cyan;
-			}
-			33% {
-				background: green;
-				color: magenta;
-			}
-			66% {
-				background: blue;
-				color: yellow;
-			}
-			100% {
-				background: red;
-				color: cyan;
-			}
-		}
-
-		@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-		{
-			0% {
-				background: red;
-				color: cyan;
-			}
-			33% {
-				background: green;
-				color: magenta;
-			}
-			66% {
-				background: blue;
-				color: yellow;
-			}
-			100% {
-				background: red;
-				color: cyan;
-			}
-		}
+		body {margin: 0;padding: 15px;position: relative;height: 100vh;animation: colorchange 2.5s linear 1s infinite; /* animation-name followed by duration in seconds*//* you could also use milliseconds (ms) or something like 2.5s */-webkit-animation: colorchange 2.5s linear 0s infinite alternate; /* Chrome and Safari */}  .content {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}  .content h1 {font-size: 48px;font-family: 'Anton', sans-serif;;text-align: center;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}  .hypnotoad {display: block;margin: 0 auto;width: 480px;max-width: 100%;height: auto;border: 0;}  @keyframes colorchange { 0% {background: red;color: cyan;} 33% {background: green;color: magenta;} 66% {background: blue;color: yellow;} 100% {background: red;color: cyan;} }  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */{ 0% {background: red;color: cyan;} 33% {background: green;color: magenta;} 66% {background: blue;color: yellow;} 100% {background: red;color: cyan;} }
 	</style>
 </head>
 <body>
